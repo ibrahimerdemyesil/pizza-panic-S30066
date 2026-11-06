@@ -1,0 +1,4 @@
+model_options:
+  C: 1.0
+  max_iter: 500
+  class_weight: balanced

@@ -1,0 +1,22 @@
+# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# conf/local holds machine-specific settings
+/conf/local/*
+!/conf/local/.gitkeep
+/mlflow.db*
+/mlruns/
+/mlartifacts/
+/data/06_models/
+/data/08_reporting/
+/logs/
+/build/

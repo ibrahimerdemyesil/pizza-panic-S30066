@@ -1,0 +1,29 @@
+[project]
+name = "highrev-live"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas>=2.2",
+    "scikit-learn>=1.5",
+    "user-agents>=2.2.0",
+    "kedro>=1.0",
+    "kedro-datasets[pandas-csvdataset,pandas-parquetdataset,pickle-pickledataset,json-jsondataset]>=7.0",
+    "mlflow>=3.0",
+    "dvc>=3.50",
+    "pyarrow",
+    "cloudpickle",
+    "pyyaml",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/highrev"]
+
+[tool.kedro]
+package_name = "highrev"
+project_name = "HighRev"
+kedro_init_version = "1.0.0"
+source_dir = "src"

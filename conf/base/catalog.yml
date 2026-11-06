@@ -1,0 +1,19 @@
+orders:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/orders.csv
+  load_args:
+    encoding: utf-8
+
+customers:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/customers.csv
+  load_args:
+    encoding: utf-8
+
+classifier:
+  type: pickle.PickleDataset
+  filepath: data/06_models/classifier.pickle
+
+metrics:
+  type: json.JSONDataset
+  filepath: data/08_reporting/metrics.json
