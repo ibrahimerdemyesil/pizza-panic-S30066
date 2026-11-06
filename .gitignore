@@ -20,3 +20,6 @@ __pycache__/
 /data/08_reporting/
 /logs/
 /build/
+
+/.venv/
+**/__pycache__/

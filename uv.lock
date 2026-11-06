@@ -6,10 +6,10 @@ resolution-markers = [
     "python_full_version >= '3.14' and sys_platform == 'emscripten'",
     "python_full_version >= '3.14' and sys_platform != 'emscripten' and sys_platform != 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'win32'",
-    "python_full_version < '3.12' and sys_platform == 'win32'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform == 'emscripten'",
-    "python_full_version < '3.12' and sys_platform == 'emscripten'",
     "python_full_version >= '3.12' and python_full_version < '3.14' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version < '3.12' and sys_platform == 'win32'",
+    "python_full_version < '3.12' and sys_platform == 'emscripten'",
     "python_full_version < '3.12' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 
@@ -1713,6 +1713,7 @@ dependencies = [
     { name = "dvc" },
     { name = "kedro" },
     { name = "kedro-datasets", extra = ["pandas-csvdataset", "pandas-parquetdataset", "pickle-pickledataset"] },
+    { name = "matplotlib" },
     { name = "mlflow" },
     { name = "pandas" },
     { name = "pyarrow" },
@@ -1727,6 +1728,7 @@ requires-dist = [
     { name = "dvc", specifier = ">=3.50" },
     { name = "kedro", specifier = ">=1.0" },
     { name = "kedro-datasets", extras = ["pandas-csvdataset", "pandas-parquetdataset", "pickle-pickledataset", "json-jsondataset"], specifier = ">=7.0" },
+    { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "mlflow", specifier = ">=3.0" },
     { name = "pandas", specifier = ">=2.2" },
     { name = "pyarrow" },
